@@ -1,0 +1,58 @@
+extends layout
+
+block content
+  div(class = "app-wrapper" id="paint" style="height:100vh")
+    div.content(style ="display:flex;flex:1;min-height:100vh")
+      aside.sidebar(style="background:#fff;flex:0 0 250px;")
+        h3 Nhận diện số
+        p. 
+          1653030- Nguyễn Anh Huy
+          1653030- Nguyễn Anh Huy
+          1653030- Nguyễn Anh huy
+      main.main-contain(style="background:#f0f0f0; min-width:780px;flex:1")
+        h5(style="margin:20px 0px 0px 40px") Draw in here
+        div(id="main")
+          div(id="buttonControl" class="flex-column")
+            button(onclick='save()') Predict
+            button(onclick='reset()') Reset
+          div(id="progressbar" class="flex-column")
+            div(class="row")
+              label.col-sm-1 0
+              div.progress.col-sm-11
+                div.progress-bar(id ="0" role = "progressbar", aria-valuemin="0", aria-valuemax="1")
+            div(class="row")
+              label.col-sm-1 1
+              div.progress.col-sm-11
+                div.progress-bar(id ="1" role = "progressbar", aria-valuemin="0", aria-valuemax="1")
+            div(class="row")
+              label.col-sm-1 2
+              div.progress.col-sm-11
+                div.progress-bar(id ="2" role = "progressbar", aria-valuemin="0", aria-valuemax="1")
+            div(class="row")
+              label.col-sm-1 3
+              div.progress.col-sm-11
+                div.progress-bar(id ="3" role = "progressbar", aria-valuemin="0", aria-valuemax="1")
+            div(class="row")
+              label.col-sm-1 4
+              div.progress.col-sm-11
+                div.progress-bar(id ="4" role = "progressbar", aria-valuemin="0", aria-valuemax="1")
+            div(class="row")
+              label.col-sm-1 5
+              div.progress.col-sm-11
+                div.progress-bar(id ="5" role = "progressbar", aria-valuemin="0", aria-valuemax="1")
+            div(class="row")
+              label.col-sm-1 6
+              div.progress.col-sm-11
+                div.progress-bar(id ="6" role = "progressbar", aria-valuemin="0", aria-valuemax="1")
+            div(class="row")
+              label.col-sm-1 7
+              div.progress.col-sm-11
+                div.progress-bar(id ="7" role = "progressbar", aria-valuemin="0", aria-valuemax="1")
+            div(class="row")
+              label.col-sm-1 8
+              div.progress.col-sm-11
+                div.progress-bar(id ="8" role = "progressbar", aria-valuemin="0", aria-valuemax="1")
+            div(class="row")
+              label.col-sm-1 9
+              div.progress.col-sm-11
+                div.progress-bar(id ="9" role = "progressbar", aria-valuemin="0", aria-valuemax="1")

@@ -1,0 +1,48 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+#main{
+  display: flex;
+}
+
+#main canvas{
+  height: 224px !important;
+  margin:  5px 30px 30px 30px;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 5px 15px rgba(57, 98, 254, 0.02), 0 3px 6px rgba(117, 108, 254, 0.12);
+}
+.progress.col-sm-11{
+  margin:  0;
+  background-color: #fcfcff !important;
+  border: 1px solid #888;
+  width: 30%;
+  height: 1.25rem !important;
+  padding:0
+}
+#buttonControl{
+  display: flex;
+  align-self: center;
+}
+#buttonControl button{
+  width: 100px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #333;
+  background: #4287f5;
+  box-shadow: none;
+}
+
+#progressbar{
+  width: 500px;
+  padding-left: 50px;
+}
+.main-contain{
+  padding:auto auto;
+}
