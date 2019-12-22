@@ -19,7 +19,6 @@ router.post('/', function(req, res, next) {
   pyprog.stdout.on('data', function(data) {
     res.send(data)
   }) 
-  
 });
 
 

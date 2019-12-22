@@ -3,18 +3,25 @@ extends layout
 block content
   div(class = "app-wrapper" id="paint" style="height:100vh")
     div.content(style ="display:flex;flex:1;min-height:100vh")
-      aside.sidebar(style="background:#fff;flex:0 0 250px;")
-        h3 Nhận diện số
-        p. 
-          1653030- Nguyễn Anh Huy
-          1653030- Nguyễn Anh Huy
-          1653030- Nguyễn Anh huy
+      aside.sidebar(style="background:#fff;flex:0 0 250px;oca")
+        h6 Nhận dạng chữ số viết tay sử dụng Convolutional Neural Network
+        p(style="padding:5px") Mô hình CNN gồm 1 Convoultional layer, 1 Pooling layer và 2 Fully Connected layer đã được huấn luyện với độ chính xác trên tập dữ liệu training và testing lần lượt là 99.95% và 98.84%.
+        span Người thực hiện:
+        br
+        span Nguyễn Ảnh Đạt - 1653013 
+        br
+        span Nguyễn Anh Huy - 1653030
+        br
+        span Tô Thành Nghĩa - 1653053
+        br
+        span Trần Quang Hưng - 1653149
+        
       main.main-contain(style="background:#f0f0f0; min-width:780px;flex:1")
         h5(style="margin:20px 0px 0px 40px") Draw in here
         div(id="main")
           div(id="buttonControl" class="flex-column")
-            button(onclick='save()') Predict
-            button(onclick='reset()') Reset
+            button(onclick='save()') Dự đoán
+            button(onclick='reset()') Xóa
           div(id="progressbar" class="flex-column")
             div(class="row")
               label.col-sm-1 0

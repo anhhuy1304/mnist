@@ -20,13 +20,20 @@ model.load_weights('/home/anhhuy/Documents/project/detectNumber/cnn/weights.h5')
 
 img = load_img('/home/anhhuy/Documents/project/detectNumber/image.png', grayscale=True, target_size=(28, 28))
 img.save("/home/anhhuy/Documents/project/detectNumber/test1.png")
+
+#convert to array
 img = img_to_array(img)
+
+#reshape
 img = img.reshape(1, 28, 28, 1)
+
 # Biến đổi kiểu dữ liệu của ảnh sang kiểu dữ liệu float
 img = img.astype('float32')
 
 # Chuẩn hóa giá trị của ảnh về [0, 1]
 img /= 255
+
+#predict
 predict = model.predict(img)
 print(predict)
 sys.stdout.flush()

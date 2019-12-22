@@ -41,7 +41,7 @@ var paint = function () {
     self.drawLine(self.savedPosition.x,
       self.savedPosition.y,
       newMousePosition.x,
-      newMousePosition.y);
+      newMousePosition.y);  
     self.savedPosition = newMousePosition;
   }
   this.drawLine = function (startX, startY, endX, endY) {

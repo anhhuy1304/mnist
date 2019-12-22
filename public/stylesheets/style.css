@@ -46,3 +46,12 @@ a {
 .main-contain{
   padding:auto auto;
 }
+
+.content h6{
+  padding: 10px;
+  color: #6699cc;
+  font-weight: bold;
+}
+.content span{
+  padding: 5px;
+}
