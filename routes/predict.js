@@ -15,12 +15,12 @@ router.post('/', function(req, res, next) {
     }
   });
   var a= require('child_process').spawn;
-  var pyprog = a('python3', ['../cnn/cnn.py']);
+  var pyprog = a('python3', ['/home/anhhuy/Documents/project/detectNumber/cnn/cnn.py']);
   pyprog.stdout.on('data', function(data) {
     res.send(data)
   }) 
 });
-// /home/anhhuy/Documents/project/detectNumber/cnn/cnn.py
+
 
 
 module.exports = router;

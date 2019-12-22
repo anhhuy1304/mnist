@@ -11,15 +11,15 @@ import sys
 from PIL import Image  
 import PIL  
 
-json_file = open('./model.json', 'r')
+json_file = open('/home/anhhuy/Documents/project/detectNumber/cnn/model.json', 'r')
 json_model = json_file.read()
 json_file.close()
 model = model_from_json(json_model)
-model.load_weights('./weights.h5')
+model.load_weights('/home/anhhuy/Documents/project/detectNumber/cnn/weights.h5')
 
 
-img = load_img('../image.png', grayscale=True, target_size=(28, 28))
-img.save("../test1.png")
+img = load_img('/home/anhhuy/Documents/project/detectNumber/image.png', grayscale=True, target_size=(28, 28))
+img.save("/home/anhhuy/Documents/project/detectNumber/test1.png")
 
 #convert to array
 img = img_to_array(img)
